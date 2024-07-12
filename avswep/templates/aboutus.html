@@ -1,0 +1,378 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+  <link rel="shortcut icon" href="{% static 'assets/images/fav.png' %} " type="image/x-icon">
+  <title>AVS Computer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+
+  <style>
+
+
+  </style>
+
+  <!--
+    
+TemplateMo 557 Grad School
+
+https://templatemo.com/tm-557-grad-school
+
+-->
+</head>
+
+<body>
+
+
+  <!--header-->
+  <header class="main-header clearfix" role="header">
+    <div class="logo">
+      <img src="/static/assets/images/logo (1).png" alt="">
+    </div>
+    <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+    <nav id="menu" class="main-nav" role="navigation">
+      <nav id="menu" class="main-nav" role="navigation">
+        <ul class="main-menu">
+          <li><a href="{% url 'home'%}" class="external">Home</a></li>
+          <li><a href="{% url 'aboutus'%}" class="external">About Us</a></li>
+          <li><a href="{% url 'course'%}" class="external">Course</a></li>
+          <li><a href="{% url 'gallery'%}" class="external">Gallery </a></li>
+          <li><a href="verification.html" class="external">Verify Certificate</a></li>
+          <li><a href="placementpartner.html" class="external">Placementn Partners</a></li>
+          <!-- <li><a href="#section5">Video</a></li> -->
+          <li><a href="{% url 'contact'%}" class="external">Contact</a></li>
+
+          <li><a href="{%url 'login' %}" class="user"> <img src="/static/assets/images/userlogo2.png" alt="" style="width: 30px; height: 30px;"></a></li>
+
+        </ul>
+      </nav>
+    </nav>
+  </header>
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="section main-banner" id="top" data-section="section1">
+    <video autoplay muted loop id="bg-video">
+      <source src="/static/assets/images/course-video.mp4" type="video/mp4" />
+    </video>
+
+    <div class="video-overlay header-text">
+      <div class="caption">
+        <h6>AVS Computer</h6>
+        <h2>Know <em>About Us</em></h2>
+
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+
+  <!-- <section class="features">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-12">
+          <div class="features-post">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-bullseye"></i>Mission</h4>
+              </div>
+              <div class="content-hide">
+                <p>To maintain a platform where people can excel their knowledge and fulfill all their dreams.</p>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post second-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-eye"></i>Vision</h4>
+              </div>
+              <div class="content-hide">
+                <p>“Contributing in Empowerment of Society, thus creating a Healthy and Develop Nation.”
+                  <br>
+                  “We visualize a World, where all people hold the power to create opportunities for themselves &
+                  others.”
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-12">
+          <div class="features-post third-features">
+            <div class="features-content">
+              <div class="content-show">
+                <h4><i class="fa fa-book"></i>Objectives</h4>
+              </div>
+              <div class="content-hide">
+                <p>To ensure that each person could get an equal opportunity to enhance their knowledge & skills.
+                  To provide professional trainers with good infrastructure and healthy environment.
+                  To keep ourselves up-to-date so as to keep a pace with changing technology and environment.  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section why-us" data-section="section2">
+    <div class="container">
+      <div class="row">
+        <div class=" mt-5 col-md-12">
+          <div id='tabs'>
+            <ul>
+              <li><a href='#tabs-1'>Mission</a></li>
+              <li><a href='#tabs-2'>Vision</a></li>
+              <li><a href='#tabs-3'>Objectives</a></li>
+            </ul>
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="/static/assets/images/choose-us-image-01.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Mission</h4>
+                    <p>To maintain a platform where people can excel their knowledge and fulfill all their dreams.To
+                      maintain a platform where people can excel their knowledge and fulfill all their dreams. </p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-2'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="/static/assets/images/choose-us-image-02.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Vision</h4>
+                    <p>“Contributing in Empowerment of Society, thus creating a Healthy and Develop Nation.”</p>
+                    <p>“We visualize a World, where all people hold the power to create opportunities for themselves &
+                      others.” </p>
+                  </div>
+                </div>
+              </article>
+              <article id='tabs-3'>
+                <div class="row">
+                  <div class="col-md-6">
+                    <img src="/static/assets/images/choose-us-image-03.png" alt="">
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Objectives</h4>
+                    <p>To ensure that each person could get an equal opportunity to enhance their knowledge & skills.
+                    </p>
+
+                    <p>To provide professional trainers with good infrastructure and healthy environment.</p>
+
+                    <p>To keep ourselves up-to-date so as to keep a pace with changing technology and environment.  </p>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section why-us vibg border-top pt-5s" id="section2" >
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="section-heading mb-3">
+            <h2>ABOUT</h2>
+          </div>
+        </div>
+
+        <div class="row my-3">
+          <div class="col-md-12 align-self-center">
+            <div class="left-content ">
+
+              <p>AVS COMPUTER training centre in Vijay Nagar Ghaziabad offers short-term courses and certificate
+                courses.
+                Inclusive of comprehensive learning, the long-term programmes feature subjects such as web development,
+                financial accountancy, computer application and programming, information technology, multimedia and
+                web-designing. Some of the short-term courses cover topics like Windows XP, 7, 8, 10, Vista, MS Office,
+                DTP (Desk Top Publishing), Web Designing, Multimedia, Tally ERP 9, C, C++ , and Visual Basic. Walk into
+                this centre all through the week between 07:00 - 21:00. Pay in Cash, Credit Card, Master Card, Visa
+                Card,
+                Cheques, Debit Cards. computer application and programming, information technology, multimedia and
+                web-designing. Some of the short-term courses cover topics like Windows XP, 7, 8, 10, Vista, MS Office,
+                DTP (Desk Top Publishing), Web Designing, Multimedia, Tally ERP 9, C, C++ , and Visual Basic. Walk into
+                this centre all through the week between 07:00 - 21:00. Pay in Cash, Credit Card, Master Card, Visa
+                Card,
+                Cheques, Debit Cards.
+                Started in 2006, AVS is a non-profit organization, working for the betterment of the society by taking various initiatives of skill development programmes. AVS has been known for the commitment towards its work and empowering society to live a quality life.
+
+                AVS is a result of an initiative taken by, Mr. Sudhanshu Agarwal in guidance of Mrs. Manju Agarwal, to provide a better platform where people urging for success & livelihood opportunities will enhance their skills and create a skilled society thus acting as a helping hand in creating employment and development of the nation.
+
+                Having a good infrastructure along with well handled equipments and trained faculties showing their expertise in various fields and, most importantly, the students are the reasons behind this great success of institute.
+              </p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section video" data-section="section3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-top">
+          <div class="left-content">
+            <h4><em>AVS Computer Education </em></h4>
+            <p>
+              AVS Institute of Professional Education was established in year 2006 by the name of AVS Computer Center
+              with 3 Computers in 100 Sq.ft Area. Due to the support of students and the hard work of our Staff members
+              Institute get the Approval of Industrial Training Institute (ITI) from NCVT the unit of Labour Ministry of
+              the Indian Government in year 2009 and have a large setup of Technical Machinery as well as Computers in
+              area of More than 8000 Sq.ft. in April 2011 Institute get the ISO certification for its quality &
+              Committed Training AVS Institute of Professional Education was established in year 2006 by the name of AVS
+              Computer Center
+              with 3 Computers in 100 Sq.ft Area. Due to the support of students and the hard work of our Staff members
+              Institute get the Approval of Industrial Training Institute (ITI) from NCVT the unit of Labour Ministry of
+              the Indian Government in year 2009 and have a large setup of Technical Machinery as well as Computers in
+              area of More than 8000 Sq.ft. in April 2011 Institute get the ISO certification for its quality &
+              Committed TrainingAVS Institute of Professional Education was established in year 2006 by the name of AVS
+              Computer Center
+              with 3 Computers in 100 Sq.ft Area.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <article class="video-item">
+            <figure>
+              <img src="/static/assets/images/adout.jpg" alt="">
+
+            </figure>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-5">
+    <div class="row" style="width: 100%;">
+
+
+      <div class="col-4">
+        <img src="/static/assets/images/logo (1).png" alt="">
+        <p class="text-muted">Inclusive of comprehensive learning, the long-term programmes feature subjects such as web
+          development,
+          financial accountancy, computer application and programming, </p>
+      </div>
+
+      <div class="col-4">
+        <h5 style="color: #8e8a89;">Contact on</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> &nbsp; &nbsp; +91 98180 12053</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> &nbsp; &nbsp; avsitc@gmail.com</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">B- 18, New Vijay Nagar, Sector - 9,
+              Ghaziabad, Uttar Pradesh 201009</a></li>
+        </ul>
+      </div>
+
+      <div class="col-4">
+        <h5 style="color: #8e8a89;">Follow us on</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i
+                  class="fa fa-facebook"> </i></span> Facebook</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i
+                  class="fa fa-instagram"> </i></span> Instagram</a></li>
+          <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i
+                  class="fa fa-twitter"></i></span> Twitter</a></li>
+          <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i class="fa fa-facebook"></i></span> Home</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i class="fa fa-facebook"></i></span> Home</a></li> -->
+        </ul>
+      </div>
+
+
+    </div>
+
+    <div class="d-flex justify-content-center mt-3  border-top text-white">
+      <p>© 2021 Company, Inc. All rights reserved. <br> Design By ThemeWagon</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <script src="assets/js/isotope.min.js"></script>
+  <script src="assets/js/owl-carousel.js"></script>
+  <script src="assets/js/lightbox.js"></script>
+  <script src="assets/js/tabs.js"></script>
+  <script src="assets/js/video.js"></script>
+  <script src="assets/js/slick-slider.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <script>
+    //according to loftblog tut
+    $('.nav li:first').addClass('active');
+
+    var showSection = function showSection(section, isAnimate) {
+      var
+        direction = section.replace(/#/, ''),
+        reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+        reqSectionPos = reqSection.offset().top - 0;
+
+      if (isAnimate) {
+        $('body, html').animate({
+          scrollTop: reqSectionPos
+        },
+          800);
+      } else {
+        $('body, html').scrollTop(reqSectionPos);
+      }
+
+    };
+
+    var checkSection = function checkSection() {
+      $('.section').each(function () {
+        var
+          $this = $(this),
+          topEdge = $this.offset().top - 80,
+          bottomEdge = topEdge + $this.height(),
+          wScroll = $(window).scrollTop();
+        if (topEdge < wScroll && bottomEdge > wScroll) {
+          var
+            currentId = $this.data('section'),
+            reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+          reqLink.closest('li').addClass('active').
+            siblings().removeClass('active');
+        }
+      });
+    };
+
+    $('.main-menu, .scroll-to-section').on('click', 'a', function (e) {
+      if ($(e.target).hasClass('external')) {
+        return;
+      }
+      e.preventDefault();
+      $('#menu').removeClass('active');
+      showSection($(this).attr('href'), true);
+    });
+
+    $(window).scroll(function () {
+      checkSection();
+    });
+  </script>
+</body>
+
+</html>

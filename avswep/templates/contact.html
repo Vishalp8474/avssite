@@ -1,0 +1,212 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    
+ 
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+    <!-- smpt link -->
+ <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+
+
+ <style>
+
+  body{
+    background-image: url(/static/assets/images/choosing-bg.jpg);
+  }
+
+  .main{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin:80px auto;
+    
+  
+  }
+
+  #container1{
+    width: 500px; 
+    background-color: aliceblue;
+    display: inline-flex;
+    padding: 20px;
+    
+  }
+  #container{
+    width: 700px;
+    display: inline-flex;
+    padding-left: 10px;
+  }
+
+
+
+ </style>
+</head>
+<body>
+ <!--header-->
+ <header class="main-header clearfix" role="header">
+  <div class="logo">
+    <img src="/static/assets/images/logo (1).png" alt="">
+  </div>
+  <a href="#menu" class="menu-link"><i class="fa fa-bars"></i></a>
+  <nav id="menu" class="main-nav" role="navigation">
+    <nav id="menu" class="main-nav" role="navigation">
+      <ul class="main-menu">
+        <li><a href="{% url 'home'%}" class="external">Home</a></li>
+        <li><a href="{% url 'aboutus'%}" class="external">About Us</a></li>
+        <li><a href="{% url 'course'%}" class="external">Course</a></li>
+        <li><a href="{% url 'gallery'%}" class="external">Gallery </a></li>
+        <li><a href="verification.html" class="external">Verify Certificate</a></li>
+        <li><a href="placementpartner.html" class="external">Placementn Partners</a></li>
+        <!-- <li><a href="#section5">Video</a></li> -->
+        <li><a href="{% url 'contact'%}" class="external">Contact</a></li>
+
+        <li><a href="{%url 'login' %}" class="user"> <img src="/static/assets/images/userlogo2.png" alt="" style="width: 30px; height: 30px;"></a></li>
+
+      </ul>
+    </nav>
+  </nav>
+</header>
+
+
+<div class="main" >
+<div class="col-5" id="container1">
+  
+    <form style="width: 26rem;">
+        <!-- Name input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="form4Example1">Name</label>
+          <input type="text" id="name" class="form-control" required/>
+          
+        </div>
+      
+        <!-- Email input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="form4Example2">Email address</label>
+          <input type="email" id="email" class="form-control" required/>
+        
+        </div>
+      
+        <!-- Message input -->
+        <div data-mdb-input-init class="form-outline mb-4">
+            <label class="form-label" for="form4Example3">Message</label>
+          <textarea class="form-control" id="msg" rows="4" required></textarea>
+         
+        </div>
+      
+        <!-- Checkbox -->
+       <!--  <div class="form-check d-flex justify-content-center mb-4">
+          <input
+            class="form-check-input me-2"
+            type="checkbox"
+            value=""
+            id="form4Example4"
+            checked
+          />
+          <label class="form-check-label" for="form4Example4">
+            Send me a copy of this message
+          </label>
+        </div> -->
+      
+        <!-- Submit button -->
+        <button data-mdb-ripple-init type="button" class="btn btn-primary btn-block mb-4" onclick="sendemail()">Send</button>
+      </form>
+
+      
+    </div>
+
+
+    <div class="col-5" id="container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14006.048412144923!2d77.427205!3d28.6443814!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cf1d5eac75ad1%3A0x739d0ca6552cc082!2sAVS%20Computer%20Education!5e0!3m2!1sen!2sin!4v1720615921727!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+
+  </div>
+
+    <footer class="py-5">
+      <div class="row" style="width: 100%;">
+  
+  
+        <div class="col-4">
+          <img src="/static/assets/images/logo (1).png" alt="">
+          <p class="text-muted">Inclusive of comprehensive learning, the long-term programmes feature subjects such as web
+            development,
+            financial accountancy, computer application and programming, </p>
+        </div>
+  
+        <div class="col-4">
+          <h5 style="color: #8e8a89;">Contact on</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> &nbsp; &nbsp; +91 98180 12053</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"> &nbsp; &nbsp; avsitc@gmail.com</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">B- 18, New Vijay Nagar, Sector - 9,
+                Ghaziabad, Uttar Pradesh 201009</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-4">
+          <h5 style="color: #8e8a89;">Follow us on</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i
+                    class="fa fa-facebook"> </i></span> Facebook</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i
+                    class="fa fa-instagram"> </i></span> Instagram</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i
+                    class="fa fa-twitter"></i></span> Twitter</a></li>
+            <!-- <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i class="fa fa-facebook"></i></span> Home</a></li>
+                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted"><span class="ico"><i class="fa fa-facebook"></i></span> Home</a></li> -->
+          </ul>
+        </div>
+  
+      </div>
+  
+      <div class="d-flex justify-content-center mt-3  border-top text-white">
+        <p>© 2021 Company, Inc. All rights reserved. <br> Design By ThemeWagon</p>
+      </div>
+    </footer>
+
+
+
+<script>
+  function sendemail(){  
+
+    name=getElementbyId("name").value()
+    email=getElementbyId("email").value()
+    message=getElementbyId("msg").value()
+
+    Email.send({
+    Host : "smtp.elasticemail.com",
+    Username : "vishalbca7982@gmail.com",
+    Password : "6F20FBFB303DCE9D8935DF85488BB799928D",
+    To : 'vishalbca7982@gmail.com',
+    From : "vishalbca7982@gmail.com",
+    Subject : "This is the subject",
+    Body : "name"+name+" + <br>"+message+"message+  <br>"+email+"email",
+}).then(
+  message => alert(message)
+);
+
+}
+</script>
+
+
+
+<script>
+    // Initialization for ES Users
+import { Input, Ripple, initMDB } from "mdb-ui-kit";
+
+initMDB({ Input, Ripple });
+</script>
+
+</body>
+
+</html>

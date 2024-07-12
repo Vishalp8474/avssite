@@ -1,0 +1,123 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+  <title>AVS Computer</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Additional CSS Files -->
+
+  <link rel="stylesheet" href="{% static 'assets/css/reg.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/fontawesome.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/templatemo-grad-school.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/owl.css' %}">
+  <link rel="stylesheet" href="{% static 'assets/css/lightbox.css' %}">
+</head>
+
+<style>
+  form {
+    margin-top: 80px;
+
+  }
+
+  .container {
+    background-color: #343a40;
+    color: #fff;
+  }
+
+  footer {
+    width: 100%;
+
+    margin: 0;
+    padding: 0;
+  }
+</style>
+
+<body>
+
+
+
+
+
+  <!-- form tag start -->
+
+  <form action='' , method="post" , enctype='multipart/form-data'>
+
+    {% csrf_token %}
+
+    <div class="container">
+      <center>
+        <h1> Student Registeration Form</h1>
+      </center>
+      <hr>
+      <br>
+
+      <div>
+        Certificate No : &nbsp; &nbsp;
+        <input type="tt" placeholder="Certificate" name="certificate"> <br>
+      </div><br>
+      <label> Student Name </label>
+      <input type="text" name="studentname" placeholder="student name" size="15" required />
+
+      <label> Farther Name: </label>
+      <input type="text" name="farthername" placeholder="farther name" size="15" required />
+      <label> Mother Name: </label>
+      <input type="text" name="mothername" placeholder="mother name" size="15" required />
+      <div>
+        Date of birth : <input type="date" name="date"> <br>
+      </div>
+      <div>
+        <label> Course Name: </label>
+        <input type="text" name="caursename" placeholder="Course Name" size="15" required />
+      </div>
+
+      <div>
+
+        <label>
+          Select Duration :
+        </label>
+        <select name="duration">
+          <option value="Month">Month</option>
+          <option value="Month3">Month 3</option>
+          <option value="Month 6">Month 6</option>
+          <option value="Month 12">Month 12</option>
+          <option value="Year 1">Year 1</option>
+          <option value="Year 1">Year 2</option>
+        </select>
+
+      </div>
+
+      <div>
+        <label>
+          Course Status :
+        </label>
+        <select name="caursestatus">
+          <option value="Month">Panding</option>
+          <option value="Month3">Completed</option>
+        </select>
+      </div>
+
+      <div>
+
+        <label for="file">Student Photo PS:</label>
+        <input type="file" id="file" name="file">
+
+
+
+        <button type="submit" class="registerbtn">Register</button>
+      </div>
+    </container>
+  </form>
+
+
+<br>
+
+</body>
+</html>
