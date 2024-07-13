@@ -1,7 +1,7 @@
 {
 
     "builds": [{
-        "scr": "avssite/wsgi.py",
+        "src": "avssite/wsgi.py",
         "use": "@vercel/python",
         "config" : {"maxLambdaSize": "15mb", "runtime": "python3.12"}
 
